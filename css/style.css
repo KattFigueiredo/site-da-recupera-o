@@ -1,0 +1,414 @@
+/* Opens Sans fonte */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #3A354D;
+    color: white;
+    text-transform: uppercase;
+    height: 70px;
+}
+
+.fa-bars{
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links li::after{
+    content: "";
+    width: 3px;
+    height: 25px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.nav-links li:last-child::after{
+    height: 0;
+    width: 0;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-foto{
+    background-image: url('../img/fotobackgraund.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-foto h1{
+    font-size: 6rem;
+    color: white;
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
+}
+
+.sobre{
+    background-color: #3A354D;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.sobre-main{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.sobre h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #7A5CAA;
+    font-size: 3.7rem;
+    padding: 5px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-imagem{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.card-imagem img{
+    width: 95%;
+    height: 90%;
+    display: block;
+    object-fit: cover;
+    align-self: center;
+}
+
+.card-texto{
+    max-width: 310px;
+    width: 100%;
+}
+
+.card-texto p{
+    width: 100%;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.musica{
+    height: 100vh;
+    background-color: #635594;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.musica-video{
+    
+    width: 80%;
+    height: 75%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.musica-video > iframe{
+    width: 75.5%;
+    height: 100%;
+    left: 12.5%;
+    position: absolute;
+}
+    
+.musica h2{
+    font-size: 4rem;
+}
+
+.musica h2:last-child{
+    font-weight: 300;
+}
+
+.mais_tocadas{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #635594;
+}
+
+.mais_tocadas > h2{
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.cards{
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.mais_tocadas > .cards .card{
+    background-image: linear-gradient(to bottom, #e5b2ca, #7028e4);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.281);
+}
+
+.mais_tocadas > .cards .card .card-imagem{
+    width: 100%;
+    height: 70%;
+}
+
+.card-imagem img{
+    width: 210px;
+    object-fit: cover;
+}
+
+.card p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.cards .botoes{
+    padding-top: 15px;
+}
+
+.fa-forward-step, .fa-circle-pause, .fa-forward-step{
+    color: white;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.formulario{
+    background-color: #9161dd;
+    height: 50vh;
+    position: relative;
+}
+
+
+
+.forms{
+    background-color: #7028e4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 20px;
+    justify-content: space-around;
+    color: whitesmoke;
+    border-radius: 15px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    color: white;
+    padding: 3px;
+    background-color: #252525;
+}
+
+@media (max-width: 480px){
+
+    html, body{
+        overflow-x: none;
+        width: 100%;
+
+    }
+
+    header{
+        height: 80vh;
+    }
+    
+    nav{
+        height: 50vh;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .nav-links li{
+        padding-bottom: 7px;
+        display: none;
+    }
+
+    .nav-links li::after{
+        display: none;
+    }
+
+    .header-foto{
+        background-attachment: fixed;
+    }
+
+    .header-foto h1{
+        font-size: 2.3rem;
+    }
+
+    .sobre{
+        background-color: #3A354D;
+        height: 140vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-imagem{
+        width: 90px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .card-texto p{
+        width: 100%;
+        color: white;
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .musica{
+        height: 4=50vh;
+    }
+
+    .musica-video{
+        width: 100%;
+        height: 33.5%;
+        position: relative;
+    }
+    
+    .musica-video > iframe{
+        width: 90%;
+        height: 100%;
+        left: 5%;
+        position: absolute;
+    }
+
+    .musica h2{
+        font-size: 2.5rem;
+    }
+
+    .mais_tocadas{
+        height: 250vh;
+
+    }
+
+    .mais_tocadas h2{
+        font-size: 3rem;
+    }
+    .mais_tocadas > .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 250vh;
+    }
+
+
+    button{
+        background-color: red;
+    }
+
+    footer{
+        position: relative;
+        padding: 10px;
+    }
+
+    footer p{
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

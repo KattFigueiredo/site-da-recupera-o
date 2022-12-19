@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>ALEC BENJAMIN</title>
+
+    <!-- links de icones -->
+    <script src="https://kit.fontawesome.com/bc48bd619e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <p>ALEC BENJAMIN</p>
+                </div>
+                <i class="fa-solid fa-bars" onclick="clicarMenu()"></i>
+                <ul class="nav-links">
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#mais_tocadas">MAIS TOCADAS</a></li>
+                    <li><a href="#cadastro">CADASTRO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-foto">
+            <h1>A L E C  B E N J A M I N</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="sobre-main">
+                <h2>ALEC</h2>
+                <div class="cards sobre-cards">
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="img/card-1.jpg" alt="">
+                        </div>
+                        <div class="card-texto">
+                            <p>Alec Benjamin é um cantor e compositor pop norte-americano nascido em 28 de maio de 1994 no Arizona. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="img/card-2.jpg" alt="">
+                        </div>
+                        <div class="card-texto">
+                            <p>Depois de lançar um EP mixtape chamado America em 2013, ele gravou seu single de estreia, "Paper Crown", em seu dormitório na Universidade do Sul da Califórnia, lançando-o em 2014.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="img/card-3.jpg" alt="">
+                        </div>
+                        <div class="card-texto">
+                            <p>O artista é mais conhecido pela música "Let Me Down Slowly". Além de seu projeto solo, Benjamin encontrou sucesso em composições com artistas como Jon Bellion. Entre suas referências musicais, Alec já revelou que é fortemente influenciado por artistas como Eminem, John Mayer, Paul Simon e Ben Gibbard.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>benjamin</h2>
+            </div>
+        </section>
+
+        <section class="musica">
+            <h2>O <span>primeiro</span> Single</h2>
+            <div class="musica-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mzmjdntlRJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2>PAPER CROWN</h2>
+        </section>
+
+        <section class="mais_tocadas" id="mais_tocadas">
+            <h2>
+                Mais<br>Tocadas
+            </h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="img/5c35fb717dc55.jpg" alt="">
+                    </div>
+                    <p>Let me Down Slowly</p>
+                    <hr>
+                    <div class="botoes">
+                        <i class="fa-solid fa-forward-step" style="transform: rotate(180deg)"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="img/artworks-ybAr3QIUZ4ZEtt38-aRoxNA-t500x500.jpg" alt="">
+                    </div>
+                    <p>Water Fountain</p>
+                    <hr>
+                    <div class="botoes">
+                        <i class="fa-solid fa-forward-step" style="transform: rotate(180deg)"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="img/MV5BN2E5ODQxMDktODE2OS00ZjI3LWJiNjEtMDNmMzczNDc1ZmIyXkEyXkFqcGdeQXVyNjczMDkzOTA@._V1_.jpg" alt="">
+                    </div>
+                    <p>Let me Down Slowly</p>
+                    <hr>
+                    <div class="botoes">
+                        <i class="fa-solid fa-forward-step" style="transform: rotate(180deg)"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="img/artworks-000247248757-xu1qvg-t500x500.jpg" alt="">
+                    </div>
+                    <p>Let me Down Slowly</p>
+                    <hr>
+                    <div class="botoes">
+                        <i class="fa-solid fa-forward-step" style="transform: rotate(180deg)"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="cadastro">
+            <div class="forms">
+                <label for="">Nome</label>
+                <input type="text" placeholder="Digite seu nome" required>
+                <label for="">Senha</label>
+                <input type="password" placeholder="Digite sua senha" required>
+                <button type="submit">Entrar</button>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p> © Katthryn Figueiredo</p>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
